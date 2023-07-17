@@ -1,4 +1,3 @@
-# CS 218 Summer 2023 Assignment #7
 #Makefile to create the object files from both C and x86 and then link them
 
 OBJS		= parallel_sum.o hw7.o
