@@ -1,9 +1,3 @@
-;Name: Joshua Zamora
-;NSHE_ID: 5006270225
-;Section: 1001
-;Assignment: Assignment 7
-;Description: Find the sum of an array of integers using parallelism
-
 section .data
 ;------------- Constants -------------
 EXIT_SUCCESS    equ     0   ;Exit code for success
