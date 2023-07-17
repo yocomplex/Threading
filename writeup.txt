@@ -1,0 +1,125 @@
+------------------------Sequential------------------------
+time ./sum_prog_seq 20000 (run sequential)
+(1st test (sequential))
+real: 0 minutes 0.149 seconds
+user: 0 minutes 0.006 seconds
+sys : 0 minutes 0.026 seconds
+
+(2nd test (sequential))
+real: 0 minutes 0.070 seconds
+user: 0 minutes 0.008 seconds
+sys : 0 minutes 0.008 seconds
+
+(3rd test (sequential))
+real: 0 minutes 0.011 seconds
+user: 0 minutes 0.008 seconds
+sys : 0 minutes 0.001 seconds
+
+(4th test (sequential))
+real: 0 minutes 0.017 seconds
+user: 0 minutes 0.004 seconds
+sys : 0 minutes 0.011 seconds
+
+(5th test (sequential))
+real: 0 minutes 0.010 seconds
+user: 0 minutes 0.007 seconds
+sys : 0 minutes 0.000 seconds
+
+[average for time ./sum_prog_seq 20000 (run sequential)]
+0.257 seconds / 5 tests = 0.0514 seconds
+
+------------------------2 Threads------------------------
+time ./sum_prog_par 20000 2 (2 threads)
+(1st test (2 threads))
+real: 0 minutes 0.058 seconds
+user: 0 minutes 0.000 seconds
+sys : 0 minutes 0.031 seconds
+
+(2nd test (2 threads))
+real: 0 minutes 0.009 seconds
+user: 0 minutes 0.000 seconds
+sys : 0 minutes 0.009 seconds
+
+(3rd test (2 threads))
+real: 0 minutes 0.010 seconds
+user: 0 minutes 0.004 seconds
+sys : 0 minutes 0.004 seconds
+
+(4th test (2 threads))
+real: 0 minutes 0.012 seconds
+user: 0 minutes 0.011 seconds
+sys : 0 minutes 0.000 seconds
+
+(5th test (2 threads))
+real: 0 minutes 0.011 seconds
+user: 0 minutes 0.005 seconds
+sys : 0 minutes 0.004 seconds
+
+[average for time ./sum_prog_seq 20000 2 (2threads)]
+0.1 seconds / 5 tests = 0.02 seconds
+SpeedupFactor = T_seq / T_par(2)
+SpeedupFacor = 0.0514 seconds / 0.02 seconds = 2.57 seconds
+
+------------------------5 Threads------------------------
+time ./sum_prog_par 20000 5 (5 threads)
+(1st test (5 threads))
+real: 0 minutes 0.011 seconds
+user: 0 minutes 0.010 seconds
+sys : 0 minutes 0.000 seconds
+
+(2nd test (5 threads))
+real: 0 minutes 0.013 seconds
+user: 0 minutes 0.007 seconds
+sys : 0 minutes 0.008 seconds
+
+(3rd test (5 threads))
+real: 0 minutes 0.014 seconds
+user: 0 minutes 0.005 seconds
+sys : 0 minutes 0.010 seconds
+
+(4th test (5 threads))
+real: 0 minutes 0.015 seconds
+user: 0 minutes 0.008 seconds
+sys : 0 minutes 0.008 seconds
+
+(5th test (5 threads))
+real: 0 minutes 0.014 seconds
+user: 0 minutes 0.000 seconds
+sys : 0 minutes 0.013 seconds
+
+[average for time ./sum_prog_seq 20000 5 (5 threads)]
+0.067 seconds / 5 tests = 0.0134 seconds
+SpeedupFactor = T_seq / T_par(2)
+SpeedupFacor = 0.0514 seconds / 0.0134 seconds = 3.84 seconds
+
+------------------------100 Threads------------------------
+time ./sum_prog_par 20000 100 (100 Threads)
+(1st test (100 threads))
+real: 0 minutes 0.335 seconds
+user: 0 minutes 0.020 seconds
+sys : 0 minutes 0.368 seconds
+
+(2nd test (100 threads))
+real: 0 minutes 0.152 seconds
+user: 0 minutes 0.009 seconds
+sys : 0 minutes 0.156 seconds
+
+(3rd test (100 threads))
+real: 0 minutes 0.249 seconds
+user: 0 minutes 0.015 seconds
+sys : 0 minutes 0.266 seconds
+
+(4th test (100 threads))
+real: 0 minutes 0.235 seconds
+user: 0 minutes 0.005 seconds
+sys : 0 minutes 0.332 seconds
+
+(5th test (100 threads))
+real: 0 minutes 0.234 seconds
+user: 0 minutes 0.010 seconds
+sys : 0 minutes 0.245 seconds
+
+[average for time ./sum_prog_seq 20000 100 (100 threads)]
+1.205 seconds / 5 tests = 0.241 seconds
+SpeedupFactor = T_seq / T_par(2)
+SpeedupFacor = 0.0514 seconds / 0.241 seconds = 0.213 seconds
