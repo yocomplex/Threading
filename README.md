@@ -31,3 +31,4 @@ much faster it ran compared to the sequential version:
             
 where T_seq is the time it took the program to run sequentially and Tpar(n) is the time it took for the program to run in parallel on n threads.
 
+I have added a "sampleOutputThreading" to show the sum of the array from both threads
